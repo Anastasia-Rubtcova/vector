@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./styles/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/media.css" />
+    <script src="./script.js" defer></script>
+    <title>VR</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__icon">
+                <h1 class="header__icon-text">Вектор_района</h1>
+            </div>
+            <div class="header__nav nav">
+                <div class="nav__link-item">
+                    <a href="#inf-container" class="nav__link">О районе</a>
+                </div>
+                <div class="nav__link-item">
+                    <a href="#dost-container" class="nav__link">Достопримечательности</a>
+                </div>
+                <div class="nav__link-item">
+                    <a href="#gallery-container" class="nav__link">Галерея знаний</a>
+                </div>
+                <div class="nav__link-item">
+                    <a href="#connect-container" class="nav__link">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="map-container">
+                <span class="map-container__title">Кировский район</span>
+                <div class="map-container__map" id="map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A147daee8606b1e63189ebc0d6b0bee90735616e68c1a4e7244bb0726846f1008&amp;source=constructor"
+                        width="100%" height="500" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="inf-container" id="inf-container">
+                <h1 class="map-container__title">О районе</h1>
+                <div class="map-container__text">
+                    <p>Кировский район Санкт‑Петербурга — один из старейших и наиболее
+                        значимых промышленных районов города, чья история неразрывно связана с обороной Ленинграда и
+                        трудовым подвигом его жителей.</p>
+
+                    <p>Его истоки уходят в XVIII век, когда по Петергофской дороге (ныне проспект Стачек) формировались
+                        загородные усадьбы и поселения. В XIX веке здесь начали возникать промышленные предприятия,
+                        определившие будущее района: в 1801 году был основан Путиловский завод (позже — Кировский),
+                        ставший
+                        флагманом российской металлургии и машиностроения. Вокруг завода складывалась рабочая слобода,
+                        формировалась инфраструктура, росло население — так зарождался промышленный облик района.</p>
+
+                    <p class="media">В XX веке Кировский район оказался на переднем крае обороны Ленинграда. В 1941–1944 годах здесь
+                        проходила линия фронта: рабочие Кировского завода не прекращали выпуск военной техники даже под
+                        обстрелами, а жители района участвовали в строительстве оборонительных сооружений. Память об
+                        этом
+                        хранят мемориальные комплексы — «Кировский вал», памятник блокадному трамваю, монумент танку
+                        КВ‑1 и
+                        другие знаки воинской и трудовой славы.</p>
+
+                    <p class="media">После войны район активно восстанавливался и застраивался: появились новые жилые кварталы, школы,
+                        больницы, парки. Сохраняя промышленное значение, он одновременно развивался как
+                        социально‑культурный
+                        центр с библиотеками, домами культуры и спортивными объектами.</p>
+
+                    <p>Изучение истории Кировского района необходимо по нескольким причинам:</p>
+                    <ol class="inf-list">
+                        <li>Сохранение памяти. Это возможность отдать дань уважения тем, кто защищал город и трудился на
+                            заводах
+                            в тяжелейших условиях.</li>
+
+                        <li>Понимание городского развития. История района показывает, как промышленность формировала
+                            облик
+                            Петербурга, влияла на расселение, транспорт и социальную структуру.</li>
+
+                        <li>Гражданское воспитание. Мемориалы и памятные места служат наглядным уроком мужества и
+                            сплочённости,
+                            помогая передавать ценности поколениям.</li>
+
+                        <li>Краеведение как наука. Исследование локальных событий и объектов позволяет глубже понять
+                            общероссийскую историю, увидеть её через призму судеб конкретных людей и мест.</li>
+                    </ol>
+                    <p class="media">Таким образом, Кировский район — не просто территория на карте, а живой памятник истории, где
+                        каждое
+                        здание, улица и монумент рассказывают о стойкости, труде и преемственности поколений.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="dost-container" id="dost-container">
+                <h1 class="map-container__title">Достопримечательности</h1>
+                <div>
+                    <div class="dost-container__cards" id="cards0">
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e1"></div>
+                            <span class="dost-container__card-text">Нарвские ворота</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e2"></div>
+                            <span class="dost-container__card-text">памятник
+                                Маринеско</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e3"></div>
+                            <span class="dost-container__card-text">парк
+                                Александрино</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e4"></div>
+                            <span class="dost-container__card-text">Комсомольская
+                                площадь</span>
+                        </div>
+                    </div>
+                    <div class="dost-container__cards" id="cards1">
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e5"></div>
+                            <span class="dost-container__card-text">памятник Кот
+                                на камне</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e6"></div>
+                            <span class="dost-container__card-text">Танк-Победитель</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e7"></div>
+                            <span class="dost-container__card-text">памятник
+                                Кирову</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e8"></div>
+                            <span class="dost-container__card-text">сад
+                                Девятого
+                                Января</span>
+                        </div>
+                    </div>
+                    <div class="dost-container__cards" id="cards2">
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e9"></div>
+                            <span class="dost-container__card-text">памятник
+                                Говорову</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e10"></div>
+                            <span class="dost-container__card-text">проспект
+                                Стачек</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e11"></div> <span
+                                class="dost-container__card-text">памятник
+                                Фордзон</span>
+                        </div>
+                        <div class="dost-container__card">
+                            <div class="dost-container__card-img" id="e12"> </div>
+                            <span class="dost-container__card-text">Блокадный
+                                трамвай</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#map" class="map-container__link">
+                    <h2>Вернуться к карте</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="container">
+            <h1 class="map-container__title" id="gallery-container">Галерея знаний</h1>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a href="./pages/islands/islands.html">
+                        <h2 class="gallery-title">Острова района</h2>
+                        <div class="gallery-img" id="islands"></div>
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="./pages/life/life.html">
+                        <h2 class="gallery-title">Инфраструктура района</h2>
+                        <div class="gallery-img" id="life"></div>
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="./pages/history/history.html">
+                        <h2 class="gallery-title">Из истории района</h2>
+                        <div class="gallery-img" id="history"></div>
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="./pages/humans/humans.html">
+                        <h2 class="gallery-title">Район в лицах</h2>
+                        <div class="gallery-img" id="humans"></div>
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="./pages/wars/wars.html">
+                        <h2 class="gallery-title">Отголоски Войны</h2>
+                        <div class="gallery-img" id="wars"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container-bottom">
+            <div class="connect-container">
+                <h1 class="map-container__title" id="connect-container">Контакты</h1>
+                <div class="connect-img"></div>
+                <div class="connect-container__form form">
+                    <div class="form__area">
+                        <label for="name">Имя:</label>
+                        <input class="form__input" id="name-input" name="text" type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="form__area">
+                        <label for="text">Отзыв:</label>
+                        <textarea class="form__input" id="text-input" name="text" type="text" placeholder="Отзыв"
+                            required></textarea>
+                    </div>
+                    <div class="form__area">
+                        <label for="connect">Контакт для обратной связи:</label>
+                        <input class="form__input" name="text" type="text" placeholder="@yourconnect">
+                    </div>
+                    <button class="form__button">Отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://www.gov.spb.ru/gov/terr/reg_kirovsk/">
+                <div class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1e5353"
+                        class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                </div>
+            </a>
+            <a href="https://m.vk.com/club.kirnews?ysclid=ml5nh5ryd9244688188">
+                <div class="footer-link">
+                    <svg width="32px" height="32px" viewBox="0 0 24 24" fill="#1e5353"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z"
+                             />
+                    </svg>
+                </div>
+            </a>
+            <a href="https://t.me/kirovsky_spb?ysclid=ml5nkmkiuj82827372">
+                <div class="footer-link">
+                    <svg width="32px" height="32px" viewBox="0 0 48 48" fill="#1e5353"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"
+                             />
+                    </svg>
+                </div>
+            </a>
+            <a href="https://m.vk.com/patriotkirovskiispb">
+                <div class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1e5353"
+                        class="bi bi-feather" viewBox="0 0 16 16">
+                        <path
+                            d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.765 3.765 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1c-1.95 1.686-3.168 3.724-3.758 5.423-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88.017.04.035.082.056.122A68.362 68.362 0 0 0 .08 15.198a.528.528 0 0 0 .157.72.504.504 0 0 0 .705-.16 67.606 67.606 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.528.528 0 0 0 0-.739l-.729-.744 1.311.209a.504.504 0 0 0 .443-.15c.222-.23.444-.46.663-.684.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.524.524 0 0 0-.112-.172ZM3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196a.526.526 0 0 0-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.282 1.282 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a6.85 6.85 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524-1.581-.25Zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a7.97 7.97 0 0 1 1.564-.173Z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
