@@ -1,0 +1,94 @@
+:root {
+    --evergreen: #cbd1db;
+    --background: #f9fbfb;
+    --hover-background: #92a4ac;
+    --grey: #586879;
+    --text-color: #1e5353;
+    --green-text: #506829;
+    --green-focus: #c2e777;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #cbd1db 0%, #92a4acb4 100%);
+    /* color: #ecf0f1; */
+    padding: 15px;
+}
+
+.game-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: var(--evergreen);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.instructions {
+    text-align: center;
+    margin: 15px 0;
+    color: var(--text-color);
+}
+
+.timeline {
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--grey);
+    border-radius: 18px;
+    min-height: 200px;
+}
+
+.event {
+    padding: 12px;
+    margin: 8px 0;
+    background: var(--background);
+    color: var(--text-color);
+    border-radius: 16px;
+    cursor: move;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.year {
+    font-weight: bold;
+    background: var(--hover-background);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: var(--grey);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px 0;
+    /* transition: background 0.3s; */
+}
+
+button:hover {
+    background: var(--grey);
+}
+
+.result {
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--grey);
+    color: #7f8c8d;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+}

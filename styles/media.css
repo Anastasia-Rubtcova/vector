@@ -111,3 +111,11 @@
 }
 
 @media (max-width: 544px) {}
+
+@media (max-width: 400px) {
+
+    .header__icon-text {
+        font-size: 23px;
+    }
+
+}

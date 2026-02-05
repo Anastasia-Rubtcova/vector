@@ -401,3 +401,16 @@
     fill: #f9fbfb;
 }
 
+.link-back {
+    display: flex;
+
+}
+
+.link-back svg {
+    margin-left: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.link-back:hover svg {
+    transform: translateX(10px);
+}

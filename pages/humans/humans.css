@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #cbd1db 0%, #92a4acb4 100%);
+}
+
+.game-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.fact {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.option.correct {
+    background: #c2e777;
+    border: none
+}
+
+.option.wrong {
+    background: #ec7d71;
+    border: none
+}
+
+button {
+    padding: 12px 24px;
+    background: #92a4ac;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #a4b4cfaa;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
