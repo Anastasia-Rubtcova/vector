@@ -1,0 +1,221 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #cbd1db 0%, #92a4acb4 100%);
+  color: #333;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+.game-container {
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: var(--evergreen);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+}
+
+/* h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a5276;
+} */
+
+.score {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 140px;
+  color: #1e5353;
+}
+
+.map-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background: var(--evergreen);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.result-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* .map-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+} */
+
+.island-marker {
+  max-width: 460px;
+  width: 100%;
+  background-color: #92a4ac;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.island-marker:hover {
+  transform: scale(1.2);
+  background-color: #586879;
+}
+
+.card {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #1e5353;
+}
+
+#answers {
+  margin-bottom: 20px;
+}
+
+.answer-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #1e5353;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.answer-button:hover {
+  background-color: #1e5353;
+}
+
+#close-card {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#close-packed:hover {
+  background-color: #7f8c8d;
+}
+
+.end-screen {
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 100px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.end-screen h2 {
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+#restart-button {
+  padding: 12px 24px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#restart-button:hover {
+  background-color: #27ae60;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 10px;
+  }
+
+  .card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .answer-button,
+  #close-card,
+  #restart-button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .score {
+    font-size: 1em;
+  }
+
+  .island-marker {
+    width: 100%;
+    height: 25px;
+    font-size: 0.8em;
+  }
+
+  .score {
+  margin: 20px 100px;
+}
+}
+
+@media (max-width: 510px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .score {
+    font-size: 1em;
+  }
+
+  .island-marker {
+    width: 100%;
+    height: 25px;
+    font-size: 0.8em;
+  }
+
+  .score {
+  margin: 20px 70px;
+}
+}
