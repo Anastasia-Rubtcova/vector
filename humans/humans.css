@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background: linear-gradient(135deg, #cbd1db 0%, #92a4acb4 100%);
+    padding: 15px;
 }
 
 .game-container {
@@ -57,12 +58,12 @@ h2 {
 
 .option.correct {
     background: #c2e777;
-    border: none
+    border: #c2e777;
 }
 
 .option.wrong {
     background: #ec7d71;
-    border: none
+    border: #ec7d71;
 }
 
 button {
