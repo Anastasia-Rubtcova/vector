@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #cbd1db 0%, #92a4acb4 100%);
+    color: #333;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.game-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: #cbd1db;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header {
+    background: #cbd1db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.photo-container {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.old-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.option {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.option:hover {
+    border-color: #92a4acb4;
+    background-color: #cbd1db;
+}
+
+.selected {
+    border-color: #92a4acb4;
+    background-color: #cbd1db;
+}
+
+.option.correct {
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.option.wrong {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+
+button {
+    background: #92a4acb4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: #586879;
+}
+
+.info-box {
+    background: #f9f9f9;
+    border-left: 4px solid #92a4acb4;
+    padding: 15px;
+    margin: 10px 0;
+    display: none;
+}
+
+.score {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+}
