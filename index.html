@@ -218,22 +218,23 @@
             <div class="connect-container">
                 <h1 class="map-container__title" id="connect-container">Контакты</h1>
                 <div class="connect-img"></div>
-                <div class="connect-container__form form">
+                <form class="connect-container__form form" id="telegramForm">
                     <div class="form__area">
                         <label for="name">Имя:</label>
                         <input class="form__input" id="name-input" name="text" type="text" placeholder="Имя" required>
                     </div>
                     <div class="form__area">
-                        <label for="text">Отзыв:</label>
-                        <textarea class="form__input" id="text-input" name="text" type="text" placeholder="Отзыв"
+                        <label for="contact">Отзыв:</label>
+                        <textarea class="form__input" id="text-input" name="recence" placeholder="Отзыв"
                             required></textarea>
                     </div>
                     <div class="form__area">
                         <label for="connect">Контакт для обратной связи:</label>
-                        <input class="form__input" name="text" type="text" placeholder="@yourconnect">
+                        <input class="form__input" name="contact" type="text" placeholder="@yourconnect">
                     </div>
-                    <button class="form__button">Отправить</button>
-                </div>
+                    <button class="form__button" type="submit">Отправить</button>
+                </form>
+
             </div>
         </section>
     </main>
